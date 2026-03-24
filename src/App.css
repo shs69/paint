@@ -1,0 +1,44 @@
+.app {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.toolbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.erase_cursor {
+	cursor:
+		url("./assets/eraser.png") 8 8,
+		auto;
+}
+
+.brush_cursor {
+	cursor:
+		url("./assets/paint-brush.png") 8 8,
+		auto;
+}
+
+.toolbar_btn {
+	padding: 0.4rem;
+	cursor: pointer;
+	outline: 0;
+	border: 1px solid var(--border);
+	border-radius: 0.5rem;
+}
+
+.toolbar_btn:hover {
+	box-shadow: var(--shadow);
+}
+
+canvas {
+	border: 2px solid var(--border);
+	border-radius: 0.5rem;
+}
