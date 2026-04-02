@@ -11,7 +11,59 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	gap: 1rem;
+}
+
+.toolbar__tools {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.toolbar__background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
+
+	input {
+		padding: 0.5rem 1rem;
+		cursor: pointer;
+		outline: 0;
+		border: 1px solid var(--border);
+		border-radius: 0.5rem;
+		font-size: 1rem;
+	}
+
+	input:hover {
+		box-shadow: var(--shadow);
+		cursor: pointer;
+	}
+}
+
+.toolbar_btn {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	outline: 0;
+	border: 1px solid var(--border);
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+
+.toolbar_btn:hover {
+	box-shadow: var(--shadow);
+}
+
+.desctructive {
+	background-color: var(--accent-bg);
+	color: var(--accent);
+}
+
+canvas {
+	border: 2px solid var(--border);
+	border-radius: 0.5rem;
 }
 
 .erase_cursor {
@@ -24,22 +76,4 @@
 	cursor:
 		url("./assets/paint-brush.png") 8 8,
 		auto;
-}
-
-.toolbar_btn {
-	padding: 0.4rem;
-	cursor: pointer;
-	outline: 0;
-	border: 1px solid var(--border);
-	border-radius: 0.5rem;
-}
-
-.toolbar_btn:hover {
-	box-shadow: var(--shadow);
-}
-
-canvas {
-	border: 2px solid var(--border);
-	border-radius: 0.5rem;
-	touch-action: none;
 }
